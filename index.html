@@ -4,18 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>odin-recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Odin Recipes</h1>
-      <img
-        src="https://media3.giphy.com/media/oESgZ6uNs9xgQulYiK/200w.webp?cid=ecf05e47zdnjpi637123como5xzipbpy8igw0wx6llbvy2om&ep=v1_gifs_search&rid=200w.webp&ct=g"
-      />
-    </header>
-    <div>
-      <a href="recipes/sushi.html">Sushi</a>
-      <a href="recipes/ramen.html">Ramen</a>
-      <a href="recipes/onigiri.html">Onigiri</a>
-    </div>
+    <!-- navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg bg-black py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Odin Recipes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navlinks"
+          aria-controls="navlinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navlinks">
+          <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Credits</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section id="home" class="bg-black p-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md text-white">
+            <h1>Food of <span class="text-danger">Japan</span></h1>
+            <p class="lead my-4">
+              Renowned for its meticulous preparation, harmonious presentation, and fresh ingredients, Japanese food is an
+              art form that delights both the palate and the eyes. From the delicate balance of flavors in sushi and sashimi
+              to the comforting warmth of a steaming bowl of ramen, each dish reflects the country's deep-rooted cultural
+              heritage. Indulge in the subtle umami taste of miso soup, savor the crispy texture of tempura, and experience
+              the vibrant explosion of flavors in a plate of colorful sushi rolls. Join us as we explore the diverse regional
+              specialties and discover the true essence of Japan through its remarkable cuisine.
+            </p>
+          </div>
+          <div class="col-md d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1537153960513-344d9f2e8216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGphcGFuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Japan structure"
+              class="img-fluid rounded float-end"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipes" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1490052048947-f6d652c8512a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGphcGFuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="card-img-top"
+                altsushi
+              />
+              <div class="card-body">
+                <h5 class="card-title h2">Sushi</h5>
+                <p class="card-text">
+                  Sushi is a delicate Japanese dish that combines vinegared rice with fresh fish, seafood, or vegetables,
+                  offering a harmonious blend of flavors and textures in each bite.
+                </p>
+                <a href="recipes/sushi.html" class="btn btn-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1606672707344-56ec6c7df55a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b25pZ2lyaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="card-img-top"
+                alt="onigiri"
+              />
+              <div class="card-body">
+                <h5 class="card-title h2">Onigiri</h5>
+                <p class="card-text">
+                  Onigiri are portable and convenient snacks made by shaping seasoned rice into triangular or cylindrical
+                  forms and often filled with savory ingredients, providing a satisfying and portable meal option.
+                </p>
+                <a href="recipes/onigiri.html" class="btn btn-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1614563637806-1d0e645e0940?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGphcGFuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="card-img-top"
+                alt="ramen"
+              />
+              <div class="card-body">
+                <h5 class="card-title h2">Ramen</h5>
+                <p class="card-text">
+                  Ramen is a soul-warming bowl of Japanese noodles in a savory broth, accompanied by toppings such as tender
+                  chashu pork, soft-boiled egg, and crunchy vegetables, delivering a flavorful dining experience.
+                </p>
+                <a href="recipes/ramen.html" class="btn btn-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark p-3 text-white text-center">
+      <div class="container">
+        <div class="row">
+          <p class="lead text-white">Copyright &copy; 2023 The Odin Project</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
